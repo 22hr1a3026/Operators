@@ -1,0 +1,43 @@
+"""
+You are given principal amount, rate of interest per annum, and time in years. You need to calculate the simple interest.
+Input and Output Format
+Input Format:
+The first line contains the principal amount (principal).
+The second line contains the rate of interest (rate) per annum.
+The third line contains the time (time) in years.
+Output Format:
+A single line containing the simple interest calculated.
+Sample Input 1
+1000
+5
+2
+Sample Output 1
+100.0
+Sample Input 2
+5000
+8.5
+3
+Sample Output 2
+1275.0
+Sample Input 3
+5000
+8.5
+3
+Sample Output 3
+525.0
+"""
+def calculate_simple_interest(principal, rate, time):
+    # Calculate simple interest using the formula
+    simple_interest = (principal * rate * time) / 100
+    return simple_interest
+
+# Input for principal amount, rate of interest, and time
+principal = float(input("Enter the principal amount: "))
+rate = float(input("Enter the rate of interest (per annum): "))
+time = float(input("Enter the time in years: "))
+
+# Calculate simple interest
+simple_interest = calculate_simple_interest(principal, rate, time)
+
+# Output the simple interest
+print(simple_interest)
