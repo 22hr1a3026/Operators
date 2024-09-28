@@ -15,33 +15,6 @@ Sample input and output 2:
 30
 30
 40
-7)
-You are given principal amount, rate of interest per annum, and time in years. You need to calculate the simple interest.
-Input and Output Format
-Input Format:
-The first line contains the principal amount (principal).
-The second line contains the rate of interest (rate) per annum.
-The third line contains the time (time) in years.
-Output Format:
-A single line containing the simple interest calculated.
-Sample Input 1
-1000
-5
-2
-Sample Output 1
-100.0
-Sample Input 2
-5000
-8.5
-3
-Sample Output 2
-1275.0
-Sample Input 3
-5000
-8.5
-3
-Sample Output 3
-525.0
 """
 def calculate_ages(total_age):
     # Calculate age of players
@@ -51,12 +24,7 @@ def calculate_ages(total_age):
 
     return x_age, y_age, z_age
 
-def calculate_simple_interest(principal, rate, time):
-    # Calculate simple interest
-    simple_interest = (principal * rate * time) / 100
-    return simple_interest
-
-# Input for ages of players
+# Input for total age of the players
 total_age = int(input("Enter the total age of the three players: "))
 x_age, y_age, z_age = calculate_ages(total_age)
 
@@ -64,12 +32,3 @@ x_age, y_age, z_age = calculate_ages(total_age)
 print(x_age)
 print(y_age)
 print(z_age)
-
-# Input for simple interest
-principal = float(input("Enter the principal amount: "))
-rate = float(input("Enter the rate of interest: "))
-time = float(input("Enter the time in years: "))
-simple_interest = calculate_simple_interest(principal, rate, time)
-
-# Output simple interest
-print(simple_interest)
